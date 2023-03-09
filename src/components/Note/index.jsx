@@ -5,7 +5,7 @@ import { Container } from "./styles";
 
 export function Note({ data, ...rest }) {
   return (
-    <Container to={"/details/:id"} {...rest}>
+    <Container {...rest}>
       <h3>{data.title}</h3>
 
       <Rating></Rating>

@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const Container = styled(Link)`
+export const Container = styled.button`
   padding: 32px;
   border-radius: 16px;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_PINK};
 
   > h3 {
+    text-align: start;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 8px;
