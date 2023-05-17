@@ -7,11 +7,9 @@ import { Container, Form, Background } from "./styles";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../hooks/auth";
 import { useState } from "react";
-import { useEffect } from "react";
-import { api } from "../../services/api";
 
 export function SignIn() {
-  const { signIn } = useAuth();
+  const { signIn, signOut } = useAuth();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

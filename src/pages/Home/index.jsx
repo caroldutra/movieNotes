@@ -3,6 +3,7 @@ import { Note } from "../../components/Note";
 import { FiPlus } from "react-icons/fi";
 
 import { Container, Content, AddMovie } from "./styles";
+import { useAuth } from "../../hooks/auth";
 
 export function Home() {
   return (

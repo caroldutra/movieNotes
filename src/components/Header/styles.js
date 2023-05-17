@@ -29,8 +29,9 @@ export const Profile = styled.div`
     flex-direction: column;
     align-items: flex-end;
 
-    a {
+    button {
       font-size: 14px;
+      background: none;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
   }

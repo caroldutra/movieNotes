@@ -1,8 +1,15 @@
 import { Container, Brand, Profile } from "./styles";
 import { Link } from "react-router-dom";
 import { Input } from "../Input";
+import { useAuth } from "../../hooks/auth";
 
 export function Header() {
+  const { signOut } = useAuth();
+
+  function handleSignOut() {
+    signOut();
+  }
+
   return (
     <Container>
       <Brand>
@@ -14,7 +21,7 @@ export function Header() {
       <Profile>
         <div>
           <p>Carolina Dutra</p>
-          <Link to={"/"}>Sair</Link>
+          <button onClick={handleSignOut}>Sair</button>
         </div>
 
         <Link to={"/profile"}>
